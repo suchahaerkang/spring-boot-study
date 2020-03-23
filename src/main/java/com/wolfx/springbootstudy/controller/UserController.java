@@ -28,4 +28,12 @@ public class UserController {
     public String getUserById(@PathVariable(value = "id") int id){
         return Optional.ofNullable(userService.getUserById(id)).map(TUser::toString).orElse("emty string");
     }
+
+
+    @GetMapping("/getInitializerValue")
+    @ResponseBody
+    public String getInitializerValue(){
+         return userService.getInitializerValue();
+    }
+
 }

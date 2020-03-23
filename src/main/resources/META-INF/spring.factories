@@ -1,0 +1,1 @@
+org.springframework.context.ApplicationContextInitializer=com.wolfx.springbootstudy.initializer.FirstInitializer
