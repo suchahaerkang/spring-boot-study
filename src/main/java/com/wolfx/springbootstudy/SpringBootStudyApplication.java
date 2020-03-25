@@ -1,6 +1,6 @@
 package com.wolfx.springbootstudy;
 
-import com.wolfx.springbootstudy.initializer.SecondInitializer;
+import com.wolfx.springbootstudy.listener.SecondApplicationListener;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,8 +13,8 @@ public class SpringBootStudyApplication {
         //SpringApplication.run(SpringBootStudyApplication.class, args);
 
         SpringApplication springApplication = new SpringApplication(SpringBootStudyApplication.class);
-        //手动注册初始化器
-        springApplication.addInitializers(new SecondInitializer());
+        //手动注册监听器
+        springApplication.addListeners(new SecondApplicationListener());
         springApplication.run(args);
     }
 

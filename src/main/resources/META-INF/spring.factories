@@ -1,1 +1,6 @@
+#³õÊ¼»¯Æ÷
 org.springframework.context.ApplicationContextInitializer=com.wolfx.springbootstudy.initializer.FirstInitializer
+
+
+#¼àÌýÆ÷
+org.springframework.context.ApplicationListener=com.wolfx.springbootstudy.listener.FirstApplicationListener,com.wolfx.springbootstudy.listener.FourApplicationListener
